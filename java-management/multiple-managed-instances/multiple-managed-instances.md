@@ -134,7 +134,7 @@ In this lab, you will:
     <copy>
 
     JDK_DIR=$(find /usr/bin/java)
-    sudo JAVA_HOME="${JDK_DIR}" rpm -ivh <rpm_file_name.rpm>
+    sudo bash JAVA_HOME="${JDK_DIR}" rpm -ivh <rpm_file_name.rpm>
 
     </copy>
     ```   
@@ -434,4 +434,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 * **Author** - Bhuvesh Kumar, Java Management Service
-* **Last Updated By** - Ivan Eng, June 2023
+* **Last Updated By** - Yuan Chi Liu, October 2023

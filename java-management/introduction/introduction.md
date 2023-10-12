@@ -17,7 +17,7 @@ As the stewards of Java, Oracle uniquely leverages its expertise to help enterpr
 
 ## About this Workshop
 
- This workshop will walk you through the process of setting up and using Java Management Service (JMS) on Oracle Cloud Infrastructure (OCI). It will first walk you through how to set up the environment and create the necessary OCI resources such as Tagging, User Groups, Dynamic Groups and Policies in order to start using JMS. It will then guide you through the process of creating a fleet, which is the primary collection that you work with when using JMS. A fleet consists of Managed Instances that share a common management approach. You will then go through the process of creating a simple Java Application in an OCI compute instance or Windows OS. Next, you will learn how to set up the Management Agent on your host machine (also known as a Managed Instance in JMS) to monitor your Java application and view it inside a fleet in JMS. Later, you will learn how to install and configure Management Gateway on an on-premises host and have another on-premises host proxy through it to communicate with OCI network and JMS. Finally, you will see a simple example of setting up a Java Application in a Docker container and monitoring it using JMS.
+ This workshop will walk you through the process of setting up and using Java Management Service (JMS) on Oracle Cloud Infrastructure (OCI). It will first walk you through how to set up the environment and create the necessary OCI resources such as Tagging, User Groups, Dynamic Groups and Policies in order to start using JMS. It will then guide you through the process of creating a fleet, which is the primary collection that you work with when using JMS. A fleet consists of Managed Instances that share a common management approach. You will then go through the process of creating a simple Java Application in an OCI compute instance or Windows OS. Next, you will learn how to set up the Management Agent on your host machine (also known as a Managed Instance in JMS) to monitor your Java application and view it inside a fleet in JMS. Later, you will learn how to install and configure Management Gateway on an on-premises host and have another on-premises host proxy through it to communicate with OCI network and JMS. In addition to these topics, you will learn to export CSV files containing JMS data from multiple regions and storing them in a designated objects storage location. The workshop will also introduce you to setting up a Java Application in a Docker container and monitoring it using JMS. Finally, you will learn to download Java artifacts through JMS and the script friendly URLs while being able to monitor the Java downloads.
 
 *Estimated Time:* 180 minutes
 
@@ -30,13 +30,16 @@ As the stewards of Java, Oracle uniquely leverages its expertise to help enterpr
 * Understand vital concepts related to Management Agent installation
 * Install Management Agent on Managed Instances
 * Set up multiple Managed Instances and Management Gateway
+* Export JMS data across regions
 * Track Java Usage in a Container
+* Download Java Artifacts and monitor Java downloads
 
 
 ### Prerequisites
 
 * This workshop requires an Oracle Cloud account. You may use your **own cloud account** or you can get a **Free Trial** account as described in *Get Started*.
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
+* A host machine running macOS can also be used but it is not recommended as not all of the advanced features in JMS are supported.
 
 ## Extension Workshops
 
@@ -49,9 +52,10 @@ If you would like to learn more about using JMS together with other OCI services
 
 * [Java Management](https://docs.oracle.com/en-us/iaas/jms/index.html)
 * [Announcing Java Management Service](https://blogs.oracle.com/java/post/announcing-java-management-service)
+* [Oracle University](https://mylearn.oracle.com/ou/home)
 
 
 ## Acknowledgements
 
 * **Author** - Alvin Lam, Java Management Service
-* **Last Updated By/Date** - Ivan Eng, June 2023
+* **Last Updated By/Date** - Chan Wei Quan, October 2023
