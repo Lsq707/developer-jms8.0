@@ -24,7 +24,9 @@ In this lab, you will:
 
 ## Task 1: Install Management Agent on an OCI Host
 
-This task is for the installation of Management Agent in an OCI Host (OCI Compute Instance). If you are installing the agent on a non-OCI host (e.g. on premise, other cloud computes), skip to Task 2.
+This task is for the installation of Management Agent in an OCI Host(OCI Compute Instance).
+If you've created an instance based on [Lab 4](?lab=create-a-java-application), continue with the steps here.
+If you are installing the agent on a non-OCI host (e.g. on premise, other cloud computes), skip to [Task 2](?lab=set-up-of-management-agent#Task2:InstallManagementAgentonanon-OCIHost).
 
 **Pre-installation Policy Requirement**
 
@@ -35,17 +37,17 @@ This task is for the installation of Management Agent in an OCI Host (OCI Comput
   ![image of console navigation to java management](images/navigate-policies.png)
 
   2. Click **JMS_Policy**.
-  
+
   ![image of console navigation to java management](images/root-compartment-jms-policy.png)
 
   3. Click **Edit Policy Statements**
-  
+
   ![image of console navigation to java management](images/edit-jms-policy.png)
-  
+
   4. Click **+Another Statement** at the bottom right. 
-  
+
   ![image of console navigation to java management](images/jms-policy-add.png)
-  
+
   5. Add the following policy. Click **Save** to save the policy.
 
   ```
@@ -62,7 +64,7 @@ This task is for the installation of Management Agent in an OCI Host (OCI Comput
 
     ```
     <copy>
-    scp -i <your-private-key-file> <path-to-installation-script> <username>@<x.x.x.x>:<copy-to-path>
+    scp i <path-to-private-key/your-private-key-file> <path-mgmt-agent-software/your-mgmt-agent-software> <username>@<x.x.x.x>:<copy-to-path>
     </copy>
     ```
 2. Connect to your instance using SSH.
@@ -118,7 +120,6 @@ This task is for the installation of Management Agent in an OCI Host (OCI Comput
       Management Agent was successfully registered using key YourFleetName (ocid1.managementagentinstallkey.oc1.<region>.<some ocid hash>).
       Assigned JMS Fleet is YourFleetName (ocid1.jmsfleet.oc1.<region>.<some ocid hash>).
       ```
-
 
 ## Task 2: Install Management Agent on a non-OCI Host
 
@@ -209,6 +210,36 @@ Both files need to be placed in the same directory before you proceed.
      Assigned JMS Fleet is YourFleetName (ocid1.jmsfleet.oc1.iad.<some ocid hash>).
      ```
 
+**On MacOS (Non-OCI Host)**
+
+> **Note:** Advanced features(Crypto event analysis, Scan for Java libraries,Run JDK Flight Recorder (JFR), Java migration analysis, Performance analysis,Scan for Java servers )are not yet supported for mac.
+
+1. Use the **installation script** for Mac downloaded in [Lab 3](?lab=setup-a-fleet)
+
+2. Use the **management agent** **software** for Mac downloaded in [Lab 3](?lab=setup-a-fleet)
+
+3. Put the **management agent** **software** and the **installation script** in the same directory.
+
+4. Open terminal and run the following command.
+
+   ```
+   <copy>
+   sudo bash <path-to-installation-script>
+   </copy>
+   ```
+
+5. If installation is successful, you'll see a message similar to the following:
+
+   ```
+        Management Agent installation has been completed with 'Java Usage Tracking service plugin (Service.plugin.jms)'
+       JMS basic features will be enabled on this instance.
+       Management Agent installation has been completed with 'Java Management service plugin (Service.plugin.jm)'
+       JMS advanced features can be enabled on this instanceManagement Agent was successfully registered using key <key-name> (key-id).
+   
+       Instance has been assigned to <fleet-name> (fleet-id)
+   
+       A copy of this installation log can be found at <path-to-logs>
+   ```
 
 ## Task 3: Verify Management Agent Installation
 
@@ -271,7 +302,7 @@ Both files need to be placed in the same directory before you proceed.
 
 3. Take note of the fleet ocid.
 
-  ![image of fleet ocid](images/check-fleet-ocid.png)
+  ![image of fleet ocid](images/`.png)
 
 4. In the Oracle Cloud Console, open the navigation menu and click **Observability & Management**, and then click **Agents**.
 
@@ -349,7 +380,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
   ![image of runtimes after successful installation on non-oci host](images/successful-installation-non-oci.png)
 
   **For OCI Hosts:**
-  You should see two Java Runtimes. This corresponds to the Java 8 installation from [Lab 4](?lab=create-a-java-application), and Java 11 installation from the installation script at [Lab 6 Task 1](?lab=set-up-of-management-agent#task1installmanagementagentonanocihost).
+  You should see two Java Runtimes. This corresponds to the Java 8 installation from [Lab 4](?lab=create-a-java-application), and Java 17 installation from the installation script at [Lab 6 Task 1](?lab=set-up-of-management-agent#task1installmanagementagentonanocihost).
 
   ![image of runtimes after successful installation on oci host](images/successful-installation-oci.png)
 
@@ -393,7 +424,7 @@ You may now **proceed to the next lab.**
      <copy>
      sudo rpm -e oracle.mgmt_agent
      </copy>
-     ```
+    ```
 
 ## Learn More
 
@@ -407,4 +438,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 - **Author** - Esther Neoh, Java Management Service
-- **Last Updated By** - Ivan Eng, June 2023
+- **Last Updated By** - Siqi Liu, October 2023
