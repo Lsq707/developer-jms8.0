@@ -3,7 +3,8 @@
 ## Introduction
 Before you can use Java Management Service, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly to allow the communication flow between all required components and cloud services.
 
-The following diagram illustrates the topology of the environment for Java Management Service:
+The following diagram illustrates the topology of the environment for Java Management Service:<br>
+> **Note:** A step-by-step explanation of the diagram will be provided in [Task 2](#task-2-create-oci-resources-manually)
 
 ![image of jms topology](images/jms-topology.png =40%x*)
 
@@ -37,6 +38,10 @@ The Onboarding Wizard helps to create the necessary resources automatically. We 
 2. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
     ![image of console navigation to java management](images/console-navigation-jms.png)
     &nbsp;
+
+    > **Note:** You can also use the search bar to navigate around the Oracle Cloud Console.
+    ![image of console navigation using search bar for fleets](images/oci-console-search-bar-fleets.png)
+
 3. Select the root compartment under which the Onboarding Wizard will create a new compartment for JMS fleets.
     &nbsp;
 
@@ -117,6 +122,10 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
     * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**.
         ![image of console navigation to compartments](images/console-navigation-compartments.png)
     &nbsp;
+
+        > **Note:** You can also use the search bar to navigate around the Oracle Cloud Console.
+        ![image of console navigation using search bar for compartments](images/oci-console-search-bar-compartments.png)
+
     * Click **Create Compartment**.
         ![image of compartments main page](images/compartments-main-page.png)
     &nbsp;
@@ -255,6 +264,9 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 
     **Policy**: A policy is a document that specifies who can access which Oracle Cloud Infrastructure resources that your company has, and how. A policy simply allows a group to work in certain ways with specific types of resources  in a particular compartment.
 
+    [Learn more about the policy verbs (Inspect, Read, Use, Manage).](https://docs.oracle.com/en-us/iaas/Content/Identity/policyreference/policyreference_topic-Verbs.htm)<br>
+    [Understand the permissions associated with each policy verb.](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policyadvancedfeatures.htm#Permissi)
+
     Create policies for the user group to access and manage JMS fleets, management agents, agent install keys, metrics, tag namespaces, logging and LCM operations.
     &nbsp;
     * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
@@ -319,4 +331,4 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
 * **Author** - Alvin Lam, Java Management Service
-* **Last Updated By/Date** - Ivan Eng, June 2023
+* **Last Updated By/Date** - Chan Wei Quan, October 2023

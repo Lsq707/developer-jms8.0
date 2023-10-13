@@ -57,19 +57,9 @@ In this lab, you will:
 
   ![image of create fleet confirm creation](images/create-fleet-create.png)
 
-7. Click **Download software and installation script**.
+7. Click **Done** once the fleet is set up. 
 
-  ![image of page to download installation script](images/download-installation-script.png)
-
-  Select an appropriate version of the management agent software according to the operating system on your instance(s).
-
-  Select an appropriate version of the installation script according to the operating system on your instance(s).
-
-  ![image of page to select installation script os](images/download-installation-script-os.png)
-
-  Click **Close** and **Done** once the download is complete. The downloaded file will be used in [Lab 6: Install Management Agent on your Managed Instances](?lab=set-up-of-management-agent) to install the Management Agent. You can still download the installation script after the fleet is created.
-
-  ![image of page to download installation script done](images/download-installation-script-done.png)
+  ![image of page to download installation script done](images/create-fleet-success.png)
 
 8. After JMS is linked to the management agent, it will collect information on your Java runtimes. As the management agent scans the instance periodically, the information may not appear immediately. The scanning frequency can be changed here.
 
@@ -111,21 +101,18 @@ In this lab, you will:
         ![image of domain overview navigation to groups](images/domain-overview-dynamic-groups.png)
 
 
-3. There will be 2 additional dynamic groups created. 
-    * **JMS\_Advanced\_Features\_MACS_GROUP** with 2 Matching Rules
-    * **JMS\_Advance\_Features\_INSTANCE_PRINCIPALS\_GROUP** with 1 Matching Rule
+3. There will be one additional dynamic group created. 
+    * **JMS\_Advanced\_Features\_Dynamic\_Group** with 2 Matching Rules
 
    ![image of dynamic groups page](images/dynamic-groups-page.png)
 
-   ![image of macs group rules](images/macs-group-rules.png)
-
-   ![image of instance principals group rules](images/instance-principals-group-rules.png)
+   ![image of advanced features dynamic group](images/advanced-features-dynamic-group.png)
 
 4. Click on **Identity** to navigate to the Identity page.
 
-  ![image of instance principals group rules navigate to identity](images/instance-principals-group-rules-navigate-identity.png)
+  ![image of advanced features dynamic group rules navigate to identity](images/advanced-features-dynamic-group-navigate-identity.png)
 
-5. On the Identity page, click on **Policies** from the Identity menu on the left.
+1. On the Identity page, click on **Policies** from the Identity menu on the left.
 
   ![image of identity page policies select](images/identity-page-policies-select.png)
 
@@ -133,14 +120,15 @@ In this lab, you will:
 
   ![image of policies page](images/policies-page.png)
 
-7. The **JMS-Advanced-Features** policy contains 4 policy statements.
+7. The **JMS-Advanced-Features** policy contains 5 policy statements.
 
     ```
     <copy>
-    ALLOW dynamic-group JMS_Advanced_Features_INSTANCE_PRINCIPALS_GROUP to MANAGE object-family in compartment Fleet_Compartment
-    ALLOW dynamic-group JMS_Advanced_Features_MACS_GROUP to MANAGE objects in compartment Fleet_Compartment
-    ALLOW resource jms server-components to MANAGE object-family in compartment Fleet_Compartment
+    ALLOW dynamic-group JMS_Advanced_Features_Dynamic_Group to MANAGE object-family in compartment Fleet_Compartment
+    ALLOW resource jms SERVER-COMPONENTS to MANAGE object-family in compartment Fleet_Compartment
     ALLOW group FLEET_MANAGERS to MANAGE object-family in compartment Fleet_Compartment
+    ALLOW resource jms SERVER-COMPONENTS TO READ instances in compartment Fleet_Compartment
+    ALLOW resource jms SERVER-COMPONENTS TO INSPECT instance-agent-plugins in compartment Fleet_Compartment    
     </copy>
     ```
 
@@ -161,7 +149,7 @@ JMS uses the following OCI services to generate logs, object storage information
 
     - Note that the inventory logs are essential for fleet creation.
 
-    To access the fleet logs, click the respective log object displayed on the fleet main page.
+    To access the fleet logs, click the respective log object displayed on the fleet main page. For this demonstration, we will proceed with selecting the **Inventory log object**.
 
     ![image of log configuration in fleet overview page](images/fleet-log-configuration.png)
 
@@ -244,4 +232,4 @@ If you encounter any errors similar to the following, check policy statements in
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Ivan Eng, June 2023
+* **Last Updated By** - Chan Wei Quan, October 2023
