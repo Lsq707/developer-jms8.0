@@ -49,13 +49,13 @@ In this lab, you will:
  ![image of work request summary page](images/work-request-summary-page.png)
 
 2. If your request has been accepted, the status will change to **In Progress**. It will take some time to complete.
-  ![image of pending work request](images/delete-pending-work-request.png)
+    ![image of pending work request](images/delete-pending-work-request.png)
 
 3. If your request has completed successfully, the status will change to **Completed without Errors**.
-  ![image of install completed without errors](images/delete-complete-without-errors.png)
+    ![image of install completed without errors](images/delete-complete-without-errors.png)
 
 4. Return to your fleet page, under **Java Runtimes**, the deleted java runtime should not be reported after next scanning. You can also check the installation manually on your Managed Instance.
-  ![image of verify java runtime installation](images/verify-java-runtime-deletion.png)
+    ![image of verify java runtime installation](images/verify-java-runtime-deletion.png)
 
 
  You may now **proceed to the next lab.**
@@ -71,4 +71,4 @@ In this lab, you will:
 ## Acknowledgements
 
 * **Author** - Xin Yi Tay, Java Management Service
-* **Last Updated By** - Sherlin Yeo, June 2023
+* **Last Updated By** - Siqi Liu, October 2023
