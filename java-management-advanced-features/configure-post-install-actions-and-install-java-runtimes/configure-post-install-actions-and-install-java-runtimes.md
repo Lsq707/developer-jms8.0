@@ -45,7 +45,6 @@ In this lab, you will:
    | Actions                                | Options   |
    |----------------------------------------|-----------|
    | Replace JDK root certificates with default operating system certificates (only on Linux)| N/A |
-   | Disable TLS                            | TLS 1.0 , TLS 1.0 and TLS 1.1 |
    | Change minimum key length for EC       | 256 bits|
    | Change minimum key length for RSA      | 2048 bits |
    | Change minimum key length for DSA      | 2048 bits |
@@ -54,25 +53,12 @@ In this lab, you will:
 
 6. This lab will simulate the setting up of 2 different installation actions as follows:
       * Minimum key length for RSA > 2048 bits (e.g. for signed jars)
-      * Disable TLS 1.0 and TLS 1.1
   
 7. Select the  **Change minimum key length for RSA** option from the dropdown list. Another combo box will appear to the right. This contains the new minimum key length (in bits) that will be set for RSA signed jars. Click on the combo box that appeared on the right. Select **2048**.
 
    ![image of LCM minimimum-rsa-key-length](images/lcm-minimum-rsa-key-length.png)
 
-8. Click on the **+ another action** button to add an additional post Java installation action. Another combo box with the placeholder "Select an action" should appear in the next line. 
-
-   ![image of LCM add another action](images/lcm-add-another-action.png)
-
-9. Click on the combo box and select the **Disable TLS** option. 
-
-   ![image of LCM disable tls](images/lcm-disable-tls.png)
-
-   Click on the combo box that appeared on the right. Select **TLS 1.0 and TLS 1.1**.
-
-   ![image of LCM disable tls options](images/lcm-disable-tls-options.png)
-
-10. Click on the combo box under **Network configuration**. Select **Default to System Proxy settings when they do exist**.
+8. Click on the combo box under **Network configuration**. Select **Default to System Proxy settings when they do exist**.
     ![image of LCM default to system proxy action](images/lcm-system-proxy.png)
     There are a total of 5 different network configurations to choose from.
     | Actions                                | Options   |
@@ -84,11 +70,11 @@ In this lab, you will:
     | Set Socks Proxy                        | Host, Port (default is 80)|
     {: title="Available Network Configurations"}
 
-11. Click on the combo box under **Logging configuration**
+9.  Click on the combo box under **Logging configuration**
 
    ![image of lcm logging configuration](images/lcm-logging-config.png)
 
-12. Add the following actions:
+10. Add the following actions:
 
       * **Add FileHandler to Log Handler classes**.
       * **Change global logging level**, select **ALL** option.
@@ -100,11 +86,11 @@ In this lab, you will:
    | Change global logging level            | ALL, SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST (lowest value), OFF |
    {: title="Available Logging Configurations"}
 
-13. Click on the **Save** button below. This should save all the defined post Java installation actions.
+11. Click on the **Save** button below. This should save all the defined post Java installation actions.
 
     ![image of LCM post install action save](images/lcm-post-install-action-save.png)
 
-14. The post Java installation actions can be configured differently based on different requirements.
+12. The post Java installation actions can be configured differently based on different requirements.
 
    Return to the fleet details page, click **Lifecycle management settings**. The post Java installation actions that had been defined earlier will be shown.
 
@@ -230,4 +216,4 @@ In this lab, you will:
 ## Acknowledgements
 
 * **Author** - Yixin Wei, Java Management Service
-* **Last Updated By** - Ivan Eng, June 2023
+* **Last Updated By** - Chan Wei Quan, October 2023

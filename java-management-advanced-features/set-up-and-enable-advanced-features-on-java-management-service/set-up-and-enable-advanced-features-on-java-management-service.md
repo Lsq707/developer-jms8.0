@@ -32,6 +32,9 @@ In this lab, you will configure:
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**. Select the fleet that you are interested in.
    ![image of console navigation to access fleet](images/console-navigation-jms.png)
+   
+   > **Note:** You can also use the search bar to navigate around the Oracle Cloud Console.
+   ![image of console navigation using search bar for fleets](images/oci-console-search-bar-fleets.png)
 
 2. Click **Edit Properties**. A separate edit fleet properties window should appear
    ![image of edit fleet properties](images/fleet-edit-properties.png)
@@ -269,4 +272,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 * **Author** - Bhuvesh Kumar, Java Management Service
-* **Last Updated By** - Sherlin Yeo, June 2023
+* **Last Updated By** - Chan Wei Quan, October 2023
