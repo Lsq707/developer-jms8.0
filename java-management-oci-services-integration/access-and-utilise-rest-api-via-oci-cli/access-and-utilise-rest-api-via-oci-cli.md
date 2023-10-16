@@ -25,12 +25,12 @@ In this lab, you will:
 
 1. If you have generated your own keys, refer to the public documentation on how to [upload them](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm) and the public key fingerprint.
 
-2. Open the Profile menu, click the **Profile icon** and click User Settings.
+2. Open the Profile menu, click the **Profile icon** and click My profile.
 
   ![image of profile menu](images/user-profile.png)
 
     > **Note:** If **User Settings** is not indicated under Profile, Click **My Profile**.
-
+    
     ![image of user settings](images/user-settings.png)
 
 3. Click **API Keys**.
@@ -235,7 +235,7 @@ If successful, the following will be returned, with xx as your unique namespace.
  
 
 4. You should be able to see the response something like this.
-  ![image of command response in Cloud Shell](images/oci-cloud-shell-command-response.png)
+    ![image of command response in Cloud Shell](images/oci-cloud-shell-command-response.png)
 
 
 5. Similarly, you can try a few more REST API commands
@@ -274,4 +274,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Sherlin Yeo, May 2023
+* **Last Updated By** - Siqi Liu, Oct 2023
