@@ -26,15 +26,15 @@ In this lab, you will:
 
   ![image of console navigation to java download](images/console-navigation-java-download.png)
 
-2. Select a Java artifact to download.
+2. Select a JDK to download.
 
   ![image of Java Releases page](images/java-releases-page.png)
 
-3. Detailed information of the artifact will be displayed. To download an artifact, click **Download**
+3. Detailed information of the JDK will be displayed. To download a JDK, click **Download**
 
   ![image of artifact download page](images/artifact-download-page.png)
 
-4. **The Oracle Technology Network License Agreement** must be accepted before downloading. Click **Proceed** and your download will begin. You only have to agree the _Agreement_ once.
+4. **The Oracle Technology Network License Agreement** must be accepted before downloading. Click **Proceed** and your download will begin. You only have to accept the _Agreement_ once.
 
   ![image of license agreement](images/oracle-license-agreement.png)
   
@@ -58,7 +58,7 @@ To download Java artifacts using script friendly URL, you must have an active to
 
   ![image of token generate result](images/generate-token-result.png)
   
-4. You can select an active token to conduct script friendly download. Click **Copy download command** to use the download command in your console.
+4. You can select an active token to be used in the script friendly download. Click **Copy download command** to use the download command in your console.
 
   ![image of copy download command](images/copy-download-command.png)
   
