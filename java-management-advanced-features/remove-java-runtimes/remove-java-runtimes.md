@@ -23,12 +23,14 @@ In this lab, you will:
 ## Task 1: Submit Delete Java Runtime Work Request
 
 1. Open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**. Select the fleet with the advanced feature, **Lifecycle management** enabled. Refer to  [Lab 1](?lab=set-up-and-enable-advanced-features-on-java-management-service).
- ![image of console navigation to java management service](images/console-navigation-jms.png)
 
-2. Under the **Resources** menu, select **Java Runtimes**. You should see a list of the Java Runtimes that are currently in your Fleet.
- ![image of fleet details page](images/fleet-details-page.png)
+![image of console navigation to java management service](images/console-navigation-jms.png)
 
-3. Select the Runtime that you would like to remove from your fleet and click **Delete**.
+1. Under the **Resources** menu, select **Java Runtimes**. You should see a list of the Java Runtimes that are currently in your Fleet.
+
+![image of fleet details page](images/fleet-details-page.png)
+
+1. Select the Runtime that you would like to remove from your fleet and click **Delete**.
 
     > **Note:** Currently, OpenJDKs cannot be removed through Lifecycle Management.
 
