@@ -56,11 +56,30 @@ If you are installing the agent on a non-OCI host (e.g. on premise, other cloud 
   </copy>
   ```
 
-  ![image of console navigation to java management](images/save-jms-policy.png)
+  ![image of jms policy](images/save-jms-policy.png)
+
+**Download installation script**
+
+1. To Download installation script, in the Oracle Cloud Console, open the navigation menu and click **Observability & Management**, and then click **Fleets** under **Java Management**.
+
+![image of navigate to jms-console](images/console-navigation-jms.png)
+
+2. Select the Fleet created in [Lab 3](?lab=setup-a-fleet).
+3. Click **configure managed instances**
+
+![image of clicking configuration](images/click-configuration.png)
+
+4. Scroll down and select an appropriate version of the **installation script** according to the operating system on your instance(s).
+
+![image of installation script](images/select-install-management-agent-oci.png)
+
+5. Click **Close**
+
+![image of click close](images/click-close.png)
 
 **On Linux (on OCI)**
 
-1. Use the **installation script** for Linux downloaded in [Lab 3](?lab=setup-a-fleet). Enter the following command to transfer the script to the remote Managed Instance.
+1. Use the **installation script** for Linux downloaded. Enter the following command to transfer the script to the remote Managed Instance.
 
     ```
     <copy>
@@ -90,7 +109,7 @@ If you are installing the agent on a non-OCI host (e.g. on premise, other cloud 
 
 **On Windows (on OCI)**
 
-1. Use the **installation script** for Windows downloaded in [Lab 3](?lab=setup-a-fleet).
+1. Use the **installation script** for Windows downloaded.
 
 2. Run Windows Powershell as administrator.
 
@@ -127,22 +146,39 @@ This task is for the installation of Management Agent in a non-OCI host(e.g. on 
 
 >**Note:** If you have installed the management agent on an OCI instance in Task 1, skip this task and proceed to Task 3.
 
-For installation of Management agent on non-OCI hosts, you need to have both the installation script and the management agent software from [Lab 3](?lab=setup-a-fleet). 
-
-Both files need to be placed in the same directory before you proceed.
-
 >**Note:** Ensure that you have installed the latest Oracle JDK 8 on your machine before you proceed according to [Lab 4 Task 3](?lab=create-a-java-application#Task3:InstallJava8andcreateasimpleJavaapplication). Management Agents require Oracle JDK 8 to be installed.
+
+**Download management agent software and installation script**
+
+1. To Download installation script, in the Oracle Cloud Console, open the navigation menu and click **Observability & Management**, and then click **Fleets** under **Java Management**.
+
+![image of navigate to jms-console](images/console-navigation-jms.png)
+
+2. Select the Fleet created in [Lab 3](?lab=setup-a-fleet).
+3. Click **configure managed instances**
+
+![image of clicking configuration](images/click-configuration.png)
+
+4. Select an appropriate version of the **management agent software** and **installation script** according to the operating system on your instance(s).
+
+![image of installation script](images/select-install-management-agent-non-oci.png)
+
+![image of installation script](images/select-install-management-agent-oci.png)
+
+5. Click **Close**
+
+![image of click close](images/click-close.png)
 
 **On Linux (Non-OCI Host)**
 
-1. Use the **installation script** for Linux downloaded in [Lab 3](?lab=setup-a-fleet). Or enter the following command to transfer the script to the remote Managed Instance.
+1. Use the **installation script** for Linux downloaded or enter the following command to transfer the script to the remote Managed Instance.
 
     ```
     <copy>
     scp -i <your-private-key-file> <path-to-installation-script> <username>@<x.x.x.x>:<copy-to-path>
     </copy>
     ```
-2. Use the **management agent** software for linux downloaded in [Lab 3](?lab=setup-a-fleet) or enter the following command to transfer the script to the remote instance. Both the **management agent** software and the **installation script** must be placed in the same directory.
+2. Use the **management agent** software for linux downloaded or enter the following command to transfer the script to the remote instance. Both the **management agent** software and the **installation script** must be placed in the same directory.
 
     ```
     <copy>
@@ -172,9 +208,9 @@ Both files need to be placed in the same directory before you proceed.
 
 **On Windows (Non-OCI Host)**
 
-1. Use the **installation script** for Windows downloaded in [Lab 3](?lab=setup-a-fleet).
+1. Use the **installation script** for Windows downloaded.
 
-2. Use the **management agent** software for Windows downloaded in [Lab 3](?lab=setup-a-fleet). Both the **management agent** software and the **installation script** must be placed in the same directory.
+2. Use the **management agent** software for Windows downloaded. Both the **management agent** software and the **installation script** must be placed in the same directory.
 
 3. Run Windows Powershell as administrator.
 
@@ -214,9 +250,9 @@ Both files need to be placed in the same directory before you proceed.
 
 > **Note:** Advanced features(Crypto event analysis, Scan for Java libraries,Run JDK Flight Recorder (JFR), Java migration analysis, Performance analysis,Scan for Java servers )are not yet supported for mac.
 
-1. Use the **installation script** for Mac downloaded in [Lab 3](?lab=setup-a-fleet)
+1. Use the **installation script** for Mac downloaded.
 
-2. Use the **management agent** **software** for Mac downloaded in [Lab 3](?lab=setup-a-fleet)
+2. Use the **management agent** **software** for Mac downloaded.
 
 3. Put the **management agent** **software** and the **installation script** in the same directory.
 
@@ -231,14 +267,14 @@ Both files need to be placed in the same directory before you proceed.
 5. If installation is successful, you'll see a message similar to the following:
 
    ```
-        Management Agent installation has been completed with 'Java Usage Tracking service plugin (Service.plugin.jms)'
-       JMS basic features will be enabled on this instance.
-       Management Agent installation has been completed with 'Java Management service plugin (Service.plugin.jm)'
-       JMS advanced features can be enabled on this instanceManagement Agent was successfully registered using key <key-name> (key-id).
+   Management Agent installation has been completed with 'Java Usage Tracking service plugin (Service.plugin.jms)'
+   JMS basic features will be enabled on this instance.
+   Management Agent installation has been completed with 'Java Management service plugin (Service.plugin.jm)'
+   JMS advanced features can be enabled on this instanceManagement Agent was successfully registered using key key-name (key-id).
    
-       Instance has been assigned to <fleet-name> (fleet-id)
+   Instance has been assigned to fleet-name (fleet-id)
    
-       A copy of this installation log can be found at <path-to-logs>
+   A copy of this installation log can be found at path-to-logs
    ```
 
 ## Task 3: Verify Management Agent Installation
