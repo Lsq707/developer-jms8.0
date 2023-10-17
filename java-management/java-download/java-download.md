@@ -26,11 +26,11 @@ In this lab, you will:
 
   ![image of console navigation to java download](images/console-navigation-java-download.png)
 
-2. Select a Java artifact to download.
+2. Select a JDK to download.
 
   ![image of Java Releases page](images/java-releases-page.png)
 
-3. Detailed information of the artifact will be displayed. To download an artifact, click **Download**
+3. Detailed information of the JDK will be displayed. To download a JDK, click **Download**
 
   ![image of artifact download page](images/artifact-download-page.png)
 
