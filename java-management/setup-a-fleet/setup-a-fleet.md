@@ -22,23 +22,23 @@ In this lab, you will:
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
-  ![image of console navigation to java management service](images/console-navigation-jms.png)
+    ![image of console navigation to java management service](images/console-navigation-jms.png)
 
 2. Select the compartment created for JMS resources in Lab 1 (Compartment name should be **Fleet_Compartment**) and **Create fleet**.
 
-  ![image of create fleet](images/create-fleet-create-new.png)
+    ![image of create fleet](images/create-fleet-create-new.png)
 
 3. In the Create fleet dialog box, enter a name for the Fleet Name (for example, `fleet-1`), and a description.
 
 4. Click **Select all advanced features**.
 
-  ![image of create fleet options page](images/create-fleet.png)
+    ![image of create fleet options page](images/create-fleet.png)
 
-  Click **Agree**. This is to enable all the advanced features. You can still edit it after the fleet is created.
+   Click **Agree**. This is to enable all the advanced features. You can still edit it after the fleet is created.
 
-  ![image of agree advanced features](images/select-advanced-agree.png)
+   ![image of agree advanced features](images/select-advanced-agree.png)
 
-  There are 6 different advanced features available:
+    There are 6 different advanced features available:
      * Lifecycle management (LCM) - Manage the lifecycle of Java runtimes in your fleet by installing or removing reported Java runtime.
      * Advanced usage tracking - Gain advanced insights into your Java workloads in the fleet by tracking application server, Oracle JDK and openJDK used by applications.
      * Crypto event analysis - Assess the impact of Oracle JRE and JDK Cryptographic roadmap on the applications running in your fleet.
@@ -47,25 +47,25 @@ In this lab, you will:
      * Java migration analysis - Assists in migrating applications from older JDK versions to newer JDK version by providing a detailed analysis that helps to assess the potential efforts and risks of migration.
 
 
-  To learn more about the advanced features, see [Using Java Management Service Advanced Features](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=3202).
+    To learn more about the advanced features, see [Using Java Management Service Advanced Features](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=3202).
 
-  ![image of selected create fleet options](images/create-fleet-advanced-feature.png)
+    ![image of selected create fleet options](images/create-fleet-advanced-feature.png)
 
 5. Click **Next**. You are prompted to review the fleet information and management agent configuration. If you want to modify your choices, click **Previous**.
 
 6. Click **Create**. This creates a new fleet and its configuration.
 
-  ![image of create fleet confirm creation](images/create-fleet-create.png)
+    ![image of create fleet confirm creation](images/create-fleet-create.png)
 
 7. Click **Done** once the fleet is set up. 
 
-  ![image of page to download installation script done](images/create-fleet-success.png)
+    ![image of page to download installation script done](images/create-fleet-success.png)
 
 8. After JMS is linked to the management agent, it will collect information on your Java runtimes. As the management agent scans the instance periodically, the information may not appear immediately. The scanning frequency can be changed here.
 
 9. Click the fleet. In the detail page, click **Modify agent settings**.
 
-  ![image of fleet details page](images/fleet-details-page-new.png)
+    ![image of fleet details page](images/fleet-details-page-new.png)
 
 10. Change the **Java Runtime Usage**, **Agent Polling Interval**, **Work Request Validity** and  **Java Runtime Discovery** to the desired value.
 
@@ -77,13 +77,13 @@ In this lab, you will:
 
     **Java runtime discovery**: specify frequency at which the management agents should scan their hosts for Java runtime installations. The values must be between 3 to 24 hours. The default value is 24 hours.
 
-  For this example, change **Java Runtime Discovery** to **3 hours**, and **Java Runtime Usage** to **5 minutes**.
+    For this example, change **Java Runtime Discovery** to **3 hours**, and **Java Runtime Usage** to **5 minutes**.
 
-  ![image of modify agent settings page](images/fleet-modify-agent-settings-new.png)
+    ![image of modify agent settings page](images/fleet-modify-agent-settings-new.png)
 
 11. Click **Save changes** to save the new setting.
 
-  ![image of modify agent settings page](images/fleet-modify-agent-settings-save.png)
+    ![image of modify agent settings page](images/fleet-modify-agent-settings-save.png)
 
 
 ## Task 2: Verifying policies and Dynamic Groups required for advanced features
@@ -102,23 +102,23 @@ In this lab, you will:
 
 
 3. There will be one additional dynamic group created. 
-    * **JMS\_Advanced\_Features\_Dynamic\_Group** with 2 Matching Rules
+   * **JMS\_Advanced\_Features\_Dynamic\_Group** with 2 Matching Rules
 
-   ![image of dynamic groups page](images/dynamic-groups-page.png)
+     ![image of dynamic groups page](images/dynamic-groups-page.png)
 
-   ![image of advanced features dynamic group](images/advanced-features-dynamic-group.png)
+     ![image of advanced features dynamic group](images/advanced-features-dynamic-group.png)
 
 4. Click on **Identity** to navigate to the Identity page.
 
-  ![image of advanced features dynamic group rules navigate to identity](images/advanced-features-dynamic-group-navigate-identity.png)
+    ![image of advanced features dynamic group rules navigate to identity](images/advanced-features-dynamic-group-navigate-identity.png)
 
-1. On the Identity page, click on **Policies** from the Identity menu on the left.
+5. On the Identity page, click on **Policies** from the Identity menu on the left.
 
-  ![image of identity page policies select](images/identity-page-policies-select.png)
+    ![image of identity page policies select](images/identity-page-policies-select.png)
 
 6. Select the compartment where the fleet was created in Task 1 (Compartment name should be **Fleet_Compartment**). You should see the policy name **JMS-Advanced-Features**. Click on the policy name **JMS-Advanced-Features**.
 
-  ![image of policies page](images/policies-page.png)
+    ![image of policies page](images/policies-page.png)
 
 7. The **JMS-Advanced-Features** policy contains 5 policy statements.
 
@@ -190,7 +190,9 @@ You may now **proceed to the next lab**.
 If you encounter any errors similar to the following, check policy statements in your root compartment:
 
 **For Task 1 Step 6: Create fleet**
-![image of create fleet errors](images/create-fleet-errors.png =50%x*)
+
+  ![image of create fleet errors](images/create-fleet-errors.png =50%x*)
+
     ```
     <copy>
     ALLOW GROUP <user_group> TO MANAGE fleet IN COMPARTMENT <compartment_name>
@@ -207,7 +209,9 @@ If you encounter any errors similar to the following, check policy statements in
     ```
 
 **Fleet state failed**
-![image of failed fleet](images/failed-fleet.png)
+
+  ![image of failed fleet](images/failed-fleet.png)
+   
     ```
     <copy>
     ALLOW resource jms server-components TO MANAGE log-groups IN COMPARTMENT <compartment_name>

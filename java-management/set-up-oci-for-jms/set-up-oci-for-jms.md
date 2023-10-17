@@ -40,6 +40,7 @@ The Onboarding Wizard helps to create the necessary resources automatically. We 
     &nbsp;
 
     > **Note:** You can also use the search bar to navigate around the Oracle Cloud Console.
+    
     ![image of console navigation using search bar for fleets](images/oci-console-search-bar-fleets.png)
 
 3. Select the root compartment under which the Onboarding Wizard will create a new compartment for JMS fleets.
@@ -124,6 +125,7 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
     &nbsp;
 
         > **Note:** You can also use the search bar to navigate around the Oracle Cloud Console.
+        
         ![image of console navigation using search bar for compartments](images/oci-console-search-bar-compartments.png)
 
     * Click **Create Compartment**.

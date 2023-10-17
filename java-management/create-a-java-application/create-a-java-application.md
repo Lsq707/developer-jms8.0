@@ -117,9 +117,9 @@ In this workshop, you will:
 
     ![image of boot volume settings for Compute Instance](images/instance-boot-volume.png)
 
-1. Click **Create** to create the instance. Provisioning the system might take several minutes.
+4. Click **Create** to create the instance. Provisioning the system might take several minutes.
 
-  ![image of creating compute instance](images/compute-create-instance.png)
+   ![image of creating compute instance](images/compute-create-instance.png)
 
 5. You have successfully created an Oracle Linux instance.
 
@@ -127,7 +127,7 @@ In this workshop, you will:
 
 1. Open the navigation menu and click **Compute**. Under **Compute**, click **Instances**.
 
-  ![image of console navigation to instance](images/console-navigation-instance.png)
+    ![image of console navigation to instance](images/console-navigation-instance.png)
 
 2. Click the link to the Instance you created in the previous step.
 
@@ -135,7 +135,7 @@ In this workshop, you will:
 
    > **Note:** The **Username** shown in the instance details is by default **opc**.
 
-  ![image of compute instance details with public ip highlighted](images/compute-public-ip.png)
+    ![image of compute instance details with public ip highlighted](images/compute-public-ip.png)
 
 1. Open a **Terminal** or **Command Prompt** window.
   Change into the directory where you stored the SSH encryption keys you created.
@@ -163,7 +163,6 @@ In this workshop, you will:
     ```
     <copy>
     sudo yum -y install jdk-1.8-headful.x86_64
-    java -version
     </copy>
     ```
     > **Note:** Management Agents require JDK 8 and superuser privileges for installation.
@@ -177,48 +176,49 @@ In this workshop, you will:
 
 2. Build your Java application.
 
-  In the **Terminal** window, create a Java file by entering this command:
-    ```
-    <copy>
-    nano HelloWorld.java
-    </copy>
-    ```
+    In the **Terminal** window, create a Java file by entering this command:
+      
+      ```
+      <copy>
+      nano HelloWorld.java
+      </copy>
+      ```
 
-  In the file, paste the following text:
+    In the file, paste the following text:
 
-    ```
-    <copy>
-    public class HelloWorld {
-      public static void main(String[] args) throws InterruptedException{
-        System.out.println("This is my first program in java");
-        int number=15;  
-        System.out.println("List of even numbers from 1 to "+number+": ");  
-        for (int i=1; i<=number; i++) {  
-          //logic to check if the number is even or not  
-          //if i%2 is equal to zero, the number is even  
-          if (i%2==0) {
-            System.out.println(i);
-            Thread.sleep(2000);
-          }
-        }  
-      }//End of main
-    }//End of HelloWorld Class
-    </copy>
-    ```
-fi
+      ```
+      <copy>
+      public class HelloWorld {
+        public static void main(String[] args) throws InterruptedException{
+          System.out.println("This is my first program in java");
+          int number=15;  
+          System.out.println("List of even numbers from 1 to "+number+": ");  
+          for (int i=1; i<=number; i++) {  
+            //logic to check if the number is even or not  
+            //if i%2 is equal to zero, the number is even  
+            if (i%2==0) {
+              System.out.println(i);
+              Thread.sleep(2000);
+            }
+          }  
+        }//End of main
+      }//End of HelloWorld Class
+      </copy>
+      ```
+
 3. To save the file, type **CTRL+x**. Before exiting, nano will ask you if you want to save the file: Type **y** and **Enter** to save and exit.
 
 ### For **Windows**
 
 1. Install Oracle JDK 8 in your instance. Download the x64 installer `jdk-8u<VERSION>-windows-x64.exe` from the [Java download](https://www.oracle.com/java/technologies/downloads/#java8-windows) page.
 
-  Run the downloaded file and follow the instruction of installer. Leave default options, take note of the jdk installation path.
+    Run the downloaded file and follow the instruction of installer. Leave default options, take note of the jdk installation path.
 
-  Set environment variables on your system: Right-click on **My Computer** -> **Properties** -> **Advanced system settings** (on the top-left) -> **Environment Variables…** button on the bottom -> double-click on **Path** of **System variables** part of form. -> **New**-> paste paths for jdk and jre **bin** folder (for example: C:\Program Files\Java\jdk1.8.0\_161\bin; C:\Program Files\Java\jre1.8.0\_161\bin).
+    Set environment variables on your system: Right-click on **My Computer** -> **Properties** -> **Advanced system settings** (on the top-left) -> **Environment Variables…** button on the bottom -> double-click on **Path** of **System variables** part of form. -> **New**-> paste paths for jdk and jre **bin** folder (for example: C:\Program Files\Java\jdk1.8.0\_161\bin; C:\Program Files\Java\jre1.8.0\_161\bin).
 
-  Set the **JAVA\_HOME** environment variable. To set it, go to **System variables** form -> click **New** -> enter **JAVA\_HOME** for **Variable name:** and **path/to/jdk** for **Variable value:** (for example: C:\Program Files\Java\jdk1.8.0_161).
+    Set the **JAVA\_HOME** environment variable. To set it, go to **System variables** form -> click **New** -> enter **JAVA\_HOME** for **Variable name:** and **path/to/jdk** for **Variable value:** (for example: C:\Program Files\Java\jdk1.8.0_161).
 
-  To check if Java has been installed, in **Command Prompt** window, enter the following command. Make sure to open a new Command Prompt as the recent changes in environment variables may not be reflected in previous Command Prompt winodws.
+    To check if Java has been installed, in **Command Prompt** window, enter the following command. Make sure to open a new Command Prompt as the recent changes in environment variables may not be reflected in previous Command Prompt winodws.
     ```
     <copy>
     javac -help
@@ -234,36 +234,36 @@ fi
 
 2. Build your Java application.
 
-  In the **Command Prompt** window, create a java file by entering this command:
-    ```
-    <copy>
-    notepad HelloWorld.java
-    </copy>
-    ```
-  In the file, paste the following text:
-    ```
-    <copy>
-    public class HelloWorld {
-      public static void main(String[] args) throws InterruptedException{
-        System.out.println("This is my first program in java");
-        int number=15;  
-        System.out.println("List of even numbers from 1 to "+number+": ");  
-        for (int i=1; i<=number; i++) {  
-          //logic to check if the number is even or not  
-          //if i%2 is equal to zero, the number is even  
-          if (i%2==0) {
-            System.out.println(i);
-            Thread.sleep(2000);
-          }
-        }  
-      }//End of main
-    }//End of HelloWorld Class
-    </copy>
-    ```
+    In the **Command Prompt** window, create a java file by entering this command:
+      ```
+      <copy>
+      notepad HelloWorld.java
+      </copy>
+      ```
+    In the file, paste the following text:
+      ```
+      <copy>
+      public class HelloWorld {
+        public static void main(String[] args) throws InterruptedException{
+          System.out.println("This is my first program in java");
+          int number=15;  
+          System.out.println("List of even numbers from 1 to "+number+": ");  
+          for (int i=1; i<=number; i++) {  
+            //logic to check if the number is even or not  
+            //if i%2 is equal to zero, the number is even  
+            if (i%2==0) {
+              System.out.println(i);
+              Thread.sleep(2000);
+            }
+          }  
+        }//End of main
+      }//End of HelloWorld Class
+      </copy>
+      ```
 
 3. Go to the File option and click the Save button to save the file. Close the notepad window. Move to the command prompt window again.
 
-> **Note:** To conserve resources and reduce charges, remember to stop your compute instance after completing the task.
+    > **Note:** To conserve resources and reduce charges, remember to stop your compute instance after completing the task.
 
 You may now **proceed to the next lab.**
 
