@@ -75,9 +75,9 @@ Click **Save changes**
 
 ![image of Target link](images/target-link.png)
 
-1. The location of exported files will be 
+2. The location of exported files will be 
 
-   JMS > DATA EXPORT > DATE > FLEET_OCID > REGION_COMARTMENT_FLEETNAME.csv
+JMS > DATA EXPORT > DATE > FLEET OCID > REGION COMPARTMENT_FLEETNAME.csv
 
 ![image of files location](images/file-location.png)
 

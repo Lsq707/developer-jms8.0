@@ -24,8 +24,8 @@ In this lab, you will:
 
 ## Task 1: Install Management Agent on an OCI Host
 
-This task is for the installation of Management Agent in an OCI Host(OCI Compute Instance).
-If you've created an instance based on [Lab 4](?lab=create-a-java-application), continue with the steps here.
+This task is for the installation of Management Agent in an OCI Host(OCI Compute Instance).  
+If you've created an instance based on [Lab 4](?lab=create-a-java-application), continue with the steps here.  
 If you are installing the agent on a non-OCI host (e.g. on premise, other cloud computes), skip to [Task 2](?lab=set-up-of-management-agent#Task2:InstallManagementAgentonanon-OCIHost).
 
 **Pre-installation Policy Requirement**
@@ -146,11 +146,14 @@ This task is for the installation of Management Agent in a non-OCI host(e.g. on 
 
 >**Note:** If you have installed the management agent on an OCI instance in Task 1, skip this task and proceed to Task 3.
 
+
+
 >**Note:** Ensure that you have installed the latest Oracle JDK 8 on your machine before you proceed according to [Lab 4 Task 3](?lab=create-a-java-application#Task3:InstallJava8andcreateasimpleJavaapplication). Management Agents require Oracle JDK 8 to be installed.
 
 **Download management agent software and installation script**
 
-1. To Download installation script, in the Oracle Cloud Console, open the navigation menu and click **Observability & Management**, and then click **Fleets** under **Java Management**.
+1. To Download installation script, in the Oracle Cloud Console,   
+   open the navigation menu and click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
 ![image of navigate to jms-console](images/console-navigation-jms.png)
 
@@ -248,7 +251,7 @@ This task is for the installation of Management Agent in a non-OCI host(e.g. on 
 
 **On MacOS (Non-OCI Host)**
 
-> **Note:** Advanced features(Crypto event analysis, Scan for Java libraries,Run JDK Flight Recorder (JFR), Java migration analysis, Performance analysis,Scan for Java servers )are not yet supported for mac.
+> **Note:** Advanced features are not yet supported for mac.
 
 1. Use the **installation script** for Mac downloaded.
 
