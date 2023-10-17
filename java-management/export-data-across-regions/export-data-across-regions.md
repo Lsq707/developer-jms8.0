@@ -33,9 +33,9 @@ In this lab, you will:
 
      It will be used to indicate the storage location of files  
 
-     ![image of copy storage bucket url](images/copy-bucket-url.png)
+![image of copy storage bucket url](images/copy-bucket-url.png)
 
-  4. Click **Modify data export configuration** under **More Actions**.
+4. Click **Modify data export configuration** under **More Actions**.
 
 ![image of open data export configuration](images/click-configuration.png)
 
@@ -54,13 +54,14 @@ Click **Save changes**
 
 1. Click the **Export detail**  
 
-   ![image of congiguration](images/verify-configuration.png)
+
+![image of congiguration](images/verify-configuration.png)
 
 ## Task 3:  (Optional) Export status
 
 >  **Note:**  The result of the export won't be out until the next run which is at least the next day
 
-1. Scroll down to the **Resources** menu and select **Work requests**. You should see a list of the Work Requests history a in your Fleet. And u can find **Export data** there
+1. Scroll down to the **Resources** menu and select **Work requests**. You should see a list of the Work Requests history a in your Fleet where you can find **Export data** there
 
 ![image of export work request](images/workrequest-export.png)
 
@@ -72,13 +73,13 @@ Click **Save changes**
 
 1. Click the **Target link** under **Export details** 
 
-   ![image of Target link](images/target-link.png)
+![image of Target link](images/target-link.png)
 
-2. The location of exported files will be 
+1. The location of exported files will be 
 
-   **JMS **> **DATA EXPORT** > **DATE** > **FLEET_OCID** > **REGION_COMARTMENT_FLEETNAME.csv**
+   JMS > DATA EXPORT > DATE > FLEET_OCID > REGION_COMARTMENT_FLEETNAME.csv
 
-   ![image of files location](images/file-location.png)
+![image of files location](images/file-location.png)
 
 You may now **proceed to the next lab.**
 
