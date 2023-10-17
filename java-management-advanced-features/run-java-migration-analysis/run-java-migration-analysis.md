@@ -158,4 +158,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 * **Author** - Sherlin Yeo, Java Management Service
-* * **Last Updated By** - Yuan Chi Liu, Oct 2023
+* * **Last Updated By** - Yuan Chi Liu, October 2023
