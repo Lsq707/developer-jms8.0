@@ -119,4 +119,4 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
 * **Author** - Yuan Chi Liu, Java Management Service
-* **Last Updated By** - Yuan Chi Liu, Oct 2023
+* **Last Updated By** - Yuan Chi Liu, October 2023
