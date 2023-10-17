@@ -56,4 +56,4 @@ _Estimated Time:_ 45 minutes
 ## Acknowledgements
 
 * **Author** - Xin Yi Tay, Java Management Service
-* **Last Updated By/Date** - Siqi Liu, Oct 2023
+* **Last Updated By/Date** - Siqi Liu, October 2023
