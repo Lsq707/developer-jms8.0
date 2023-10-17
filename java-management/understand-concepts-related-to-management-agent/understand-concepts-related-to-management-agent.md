@@ -87,4 +87,4 @@ For non-OCI hosts, JMS is deployed by OMA. Upon successful deployment, the agent
 ## Acknowledgements
 
 - **Author** - Xin Yi Tay, Java Management Service
-- **Last Updated By** - Yuan Chi Liu, Oct 2023
+- **Last Updated By** - Yuan Chi Liu, October 2023
