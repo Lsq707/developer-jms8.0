@@ -58,8 +58,6 @@ _Estimated Time:_ 260 minutes
 ## Learn More
 
 * [Java Management Service Advanced Features](https://docs.oracle.com/en-us/iaas/jms/doc/advanced-features.html)
-
-To learn more about Oracle Cloud Infrastructure and other Oracle related training resources
 * [Oracle University](https://mylearn.oracle.com/ou/home)
 
 ## Acknowledgements
