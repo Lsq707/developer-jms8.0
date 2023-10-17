@@ -52,8 +52,6 @@ If you would like to learn more about using JMS together with other OCI services
 
 * [Java Management](https://docs.oracle.com/en-us/iaas/jms/index.html)
 * [Announcing Java Management Service](https://blogs.oracle.com/java/post/announcing-java-management-service)
-
-To learn more about Oracle Cloud Infrastructure and other Oracle related training resources
 * [Oracle University](https://mylearn.oracle.com/ou/home)
 
 
