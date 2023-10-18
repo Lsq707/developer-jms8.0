@@ -142,11 +142,9 @@ If you are installing the agent on a non-OCI host (e.g. on premise, other cloud 
 
 ## Task 2: Install Management Agent on a non-OCI Host
 
+> **Note:** If you have installed the management agent on an OCI instance in Task 1, skip this task and proceed to Task 3.
+
 This task is for the installation of Management Agent in a non-OCI host(e.g. on premise, other cloud compute). 
-
->**Note:** If you have installed the management agent on an OCI instance in Task 1, skip this task and proceed to Task 3.
-
-
 
 >**Note:** Ensure that you have installed the latest Oracle JDK 8 on your machine before you proceed according to [Lab 4 Task 3](?lab=create-a-java-application#Task3:InstallJava8andcreateasimpleJavaapplication). Management Agents require Oracle JDK 8 to be installed.
 
