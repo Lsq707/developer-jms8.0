@@ -42,15 +42,11 @@
             "filename": "../../multiple-managed-instances/multiple-managed-instances.md"
         },
         {
-            "title": "Lab 8: Exporting JMS data across Regions",
-            "filename": "../../export-data-across-regions/export-data-across-regions.md"
-        },
-        {
-            "title": "Lab 9: Track Java Usage in a Container",
+            "title": "Lab 8: Track Java Usage in a Container",
             "filename": "../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
         },
         {
-            "title": "Lab 10: Java Download",
+            "title": "Lab 9: Java Download",
             "filename": "../../java-download/java-download.md"
         },
         {
