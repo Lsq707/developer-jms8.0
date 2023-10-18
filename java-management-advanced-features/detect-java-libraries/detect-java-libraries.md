@@ -87,7 +87,8 @@ In this lab, you will:
 ## Task 3: Detect Java libraries for Java SE Application
 
 1. Open the navigation menu, click **Observability & Management**. Under **Java Management**, select **Fleets**.
-    ![image of navigation menu](images/console-navigation-fleet.png)
+
+    ![image of navigation menu](images/console-navigation-jms.png)
     Select the fleet with the advanced feature, **Lifecycle management** enabled. Refer to  [Lab 1](?lab=set-up-and-enable-advanced-features-on-java-management-service).
 
 2. On the Fleet details page, click **Scan for Java libraries**.
