@@ -127,7 +127,7 @@ In this lab, you will:
 3. Click on **Manage Deployment Rule Set** 
    > **Note:** Make sure that you have already uploaded your DRS file successfully before proceeding with the task
    
-      ![image of single managed instances](images/single-managed-instance.png)
+   ![image of single managed instances](images/single-managed-instance.png)
 
 4. Under **Manage Deployment Rule Set**, you can choose to **Distribute DRS** or **Remove DRS** for this managed instance. In this example we will be demonstrating **Distribute DRS**. After selecting **Distribute DRS** click **Submit** and a work request will be submitted.
    
@@ -150,7 +150,7 @@ In this lab, you will:
 2. In the fleet details, under **Resources** part click on **Managed instances** to view the managed instances. Select the instances you want to apply DRS on. Next, under **More actions**, select **Manage Deployment Rule Set**.
    > **Note:** Make sure that you have already uploaded your DRS file successfully before proceeding with the task
    
-      ![image of fleet details managed instances](images/managed-instances-more-actions.png)
+   ![image of fleet details managed instances](images/managed-instances-more-actions.png)
 
 3. Under **Manage Deployment Rule Set**, you can choose to **Distribute DRS** or **Remove DRS** for the selected instances. In this example we will be demonstrating **Distribute DRS**. After selecting **Distribute DRS** click **Submit** and a work request will be submitted.
    

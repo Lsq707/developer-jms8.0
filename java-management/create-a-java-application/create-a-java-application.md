@@ -135,7 +135,7 @@ In this workshop, you will:
 
    > **Note:** The **Username** shown in the instance details is by default **opc**.
 
-    ![image of compute instance details with public ip highlighted](images/compute-public-ip.png)
+  ![image of compute instance details with public ip highlighted](images/compute-public-ip.png)
 
 1. Open a **Terminal** or **Command Prompt** window.
   Change into the directory where you stored the SSH encryption keys you created.
